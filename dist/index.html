@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="tailwind.css" rel="stylesheet">
+    <title>Tailwind</title>
+</head>
+<body>
+    <main class=" flex min-h-screen bg-purple-500 sm:bg-gradient-to-r from-red-400 to-pink-400">
+        <div class="sm:flex items-start w-screen py-10 px-5 text-sm overflow-x-auto">
+          <div id="overlay" class="hidden fixed top-0 left-0 w-full h-screen bg-black bg-opacity-70 z-10"></div>
+
+            <!-- BOARD GAMES -->
+            <section class="list">
+                <header>
+                    <h3 class="p-1 font-bold leading-none text-gray-900">BOARD GAMES</h3>
+                </header>
+
+                <ul>
+                    <li class="card">
+                      <div class="p-3">
+                        <p>
+                          Lost Cities
+                        </p>
+                      </div>
+                    </li>
+                    <li class="card">
+                      <div class="p-3">
+                        <aside class="flex mb-1.5">
+                          <span class="w-8 h-2 mr-2 rounded-full bg-yellow-300"></span>
+                          <span class="w-8 h-2 mr-2 rounded-full bg-red-300"></span>
+                        </aside>
+                        <p>
+                          Trelo
+                        </p>
+                      </div>
+                    </li>
+                    <li class="card">
+                      <div class="p-3">
+                        <aside class="flex mb-1.5">
+                          <span class="w-8 h-2 mr-2 bg-yellow-300 rounded-full"></span>
+                          <span class="w-8 h-2 mr-2 bg-blue-400 rounded-full"></span>
+                          <span class="w-8 h-2 mr-2 bg-red-400 rounded-full"></span>
+                          <span class="w-8 h-2 mr-2 bg-green-300 rounded-full"></span>
+                          <span class="w-8 h-2 mr-2 bg-purple-400 rounded-full"></span>
+                        </aside>
+          
+                        <p>
+                          Star Realms
+                        </p>
+                      </div>
+                    </li>
+                    <li class="card">
+                      <div class="p-3">
+                        <p>
+                          Agricola: All Creatures Big and Small
+                        </p>
+                      </div>
+                    </li>
+                    <li class="card">
+                      <div class="p-3">
+                        <p>
+                          Splendor
+                        </p>
+                      </div>
+                    </li>
+                    <li class="card">
+                      <div class="p-3">
+                        <aside class="flex mb-1.5">
+                          <span class="w-8 h-2 mr-2 rounded-full bg-yellow-300"></span>
+                        </aside>
+          
+                        <p>
+                          unPerfect Heroes: Battle Lines
+                        </p>
+                      </div>
+                    </li>
+                </ul>
+
+                <footer>
+                    <a class="block p-1 text-gray-500 hover:text-gray-700" href="#">
+                        Add a card...
+                    </a>
+                </footer>
+            </section>
+
+            <!-- TOKYO -->
+            <section class="list">
+                <header>
+                    <h3 class=" p-1 font-bold leading-none text-gray-900">TOKYO</h3>
+                </header>
+
+                <ul>
+                    <li class="card">
+                      <figure class="flex items-center max-h-52 sm:max-h-36 overflow-x-hidden rounded-t border-b border-gray-200">
+                        <img src="./img/godzilla.jpg" alt="godzilla statue in Tokyo">
+                      </figure>
+                      <div class="p-3">
+                        <aside class="flex mb-1.5">
+                          <span class="w-8 h-2 mr-2 bg-yellow-300 rounded-full"></span>
+                          <span class="w-8 h-2 mr-2 bg-blue-400 rounded-full"></span>
+                          <span class="w-8 h-2 mr-2 bg-red-400 rounded-full"></span>
+                        </aside>
+                        <p>
+                          GODZILLA potriasť jej packou a zagratuľovať k povýšeniu
+                        </p>
+                      </div>
+                    </li>
+                    <li class="card">
+                      <div class="p-3">
+                        <aside class="flex mb-1.5">
+                          <span class="w-8 h-2 mr-2 bg-purple-400 rounded-full"></span>
+                        </aside>
+                        <p>
+                          VAMPIRE CAFÉ suck my blood pls
+                        </p>
+                      </div>
+                    </li>
+                    <li class="card">
+                      <figure class="flex items-center max-h-52 sm:max-h-36 overflow-x-hidden rounded-t border-b border-gray-200">
+                        <img src="./img/hachiboy.png" alt="drawing of the dog, akita breed">
+                      </figure>
+                      <div class="p-3">
+                        <p>
+                          HACHIKO pohľadať tohoto veľmi dobrého psa
+                        </p>
+
+                        <footer class="flex text-xs text-white">
+                          <a class="px-1 py-0.5 mr-1.5 bg-gray-500 opacity-50 hover:opacity-100 rounded" href="#">very</a>
+                          <a class="px-1 py-0.5 mr-1.5 bg-gray-500 opacity-50 hover:opacity-100 rounded" href="#">good</a>
+                          <a class="px-1 py-0.5 mr-1.5 bg-gray-500 opacity-50 hover:opacity-100 rounded" href="#">boy</a>
+                        </footer>
+                      </div>
+                    </li>
+
+                </ul>
+
+                <footer>
+                    <a class="block p-1 text-gray-500 hover:text-gray-700" href="#">
+                        Add a card...
+                    </a>
+
+                    <form action="">
+                      <textarea class="w-full p-3 border-t border-l border-gray-300 rounded-lg outline-none" rows="3"></textarea>
+                      <div class="flex mt-1.5 items-center">
+                        <button class="button button-green"> Add card </button>
+                        <a class="ml-0.5 p-1 text-gray-500 hover:text-gray-700" href="#">
+                          <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20">
+                            <path 
+                            d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z">
+                            </path>
+                          </svg>
+                        </a>
+                      </div>
+                    </form>
+                </footer>
+            </section>
+
+            <!-- BRAIN THOUGHTS -->
+            <section class="list">
+                <header>
+                  <h3 contenteditable="" class=" p-1 font-bold leading-none text-gray-900 outline-none focus:ring">BRAIN THOUGHTS</h3>
+                </header>
+
+                <ul>
+                    <li class="card">
+                      <div class="p-3">
+                        <p>
+                          Zvykol som byť mladší.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="card">
+                      <div class="p-3">
+                        <aside class="flex mb-1.5">
+                          <span class="w-8 h-2 mr-2 bg-red-400 rounded-full"></span>
+                          <span class="w-8 h-2 mr-2 bg-green-300 rounded-full"></span>
+                        </aside>
+                        <p contenteditable="" class="outline-none">
+                          Nemám rád cestovanie možno je to tým, že ma otec mlátil glóbusom.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="card">
+                      <div class="p-3">
+                        <p>
+                          ak ježiš chcel, aby sme boli triezvi, robil by z vína vodu.
+                        </p>
+          
+                        <footer class="flex mt-2 text-xs text-white">
+                          <a class="px-1 py-0.5 mr-1.5 bg-gray-500 rounded opacity-50 hover:opacity-100" href="#">✝</a>
+                          <a class="px-1 py-0.5 mr-1.5 bg-gray-500 rounded opacity-50 hover:opacity-100" href="#">🍷</a>
+                        </footer>
+                      </div>
+                    </li>
+
+                </ul>
+
+                <footer>
+                    <a class="hidden block p-1 text-gray-500 hover:text-gray-700" href="#">
+                        Add a card...
+                    </a>
+                </footer>
+            </section>
+
+            <!-- ADD NEW LIST-->
+            <form class="flex-shrink-0 sm:w-80 sm:mx4 sm:mb-0 sm:pr-8 text-gray-800" action="">
+              <input class="w-full rounded-lg bg-white bg-opacity-40 focus:bg-opacity-100 font-bold outline-none focus:shadow-xl p-2.5" type="text" placeholder="Add another list">
+            </form>
+        </div>
+    </main>
+
+    <!-- PLAYGROUND -->
+    <div class="min-h-screen bg-gradient-to-r from-purple-500 to-pink-400 py-6 flex flex-col justify-center sm:py-12">
+        <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+          <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-blue-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+          <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+            <div class="max-w-md mx-auto">
+              <div>
+                <img src="https://secondhandsongs.com/picture/246305" class="h-7 sm:h-20 mx-auto rounded-lg" />
+              </div>
+              <div class="divide-y divide-gray-200">
+                <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+                  <p>An advanced online playground for Tailwind CSS, including support for things like:</p>
+                  <ul class="list-disc space-y-2">
+                    <li class="flex items-start">
+                      <span class="h-6 flex items-center sm:h-7">
+                        <svg class="flex-shrink-0 h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                      </span>
+                      <p class="ml-2">
+                        Customizing your
+                        <code class="text-sm font-bold text-gray-900">tailwind.config.js</code> file
+                      </p>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="h-6 flex items-center sm:h-7">
+                        <svg class="flex-shrink-0 h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                      </span>
+                      <p class="ml-2">
+                        Extracting classes with
+                        <code class="text-sm font-bold text-gray-900">@apply</code>
+                      </p>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="h-6 flex items-center sm:h-7">
+                        <svg class="flex-shrink-0 h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                      </span>
+                      <p class="ml-2">Code completion with instant preview</p>
+                    </li>
+                  </ul>
+                  <p>Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.</p>
+                </div>
+                <div class="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
+                  <p>Want to dig deeper into Tailwind?</p>
+                  <p>
+                    <a href="https://tailwindcss.com/docs" class="text-green-600 hover:text-blue-700"> Read the docs &rarr; </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
